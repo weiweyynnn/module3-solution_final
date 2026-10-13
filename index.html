@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore comforting, freshly prepared favorites from the Food, LLC kitchen.">
+  <title>Food, LLC — Our Menu</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <!-- Regular Bootstrap navbar: intentionally NOT fixed or sticky. -->
+  <header>
+    <nav id="header-nav" class="navbar navbar-default" aria-label="Main navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#top">Food, LLC</a>
+
+          <!-- Bootstrap's visible-xs keeps this button mobile-only. -->
+          <button type="button" class="navbar-toggle collapsed visible-xs"
+                  data-toggle="collapse" data-target="#mobile-nav"
+                  aria-expanded="false" aria-controls="mobile-nav">
+            <span class="sr-only">Toggle menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="mobile-nav" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav visible-xs text-center">
+            <li><a href="#chicken">Chicken</a></li>
+            <li><a href="#beef">Beef</a></li>
+            <li><a href="#sushi">Sushi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="heading-area">
+      <div class="heading-eyebrow">GOOD FOOD &middot; GOOD COMPANY</div>
+      <!-- Bootstrap's text-center utility centers the required page heading. -->
+      <h1 id="our-menu" class="text-center">Our Menu</h1>
+      <p class="heading-intro text-center">Familiar favorites, made a little more special.</p>
+      <div class="heading-rule" aria-hidden="true"><span></span><i></i><span></span></div>
+    </div>
+
+    <!-- Exactly ONE outer content section, using the required Bootstrap grid. -->
+    <div class="container-fluid">
+      <div class="row">
+        <section id="menu-content" class="col-xs-12" aria-labelledby="chicken">
+          <div class="menu-panel">
+            <div class="panel-topline" aria-hidden="true">
+              <span>THE FOOD, LLC KITCHEN</span>
+              <span>FRESHLY PREPARED</span>
+            </div>
+
+            <div class="panel-heading-block text-center">
+              <p class="section-eyebrow">THE HOUSE FAVORITE</p>
+              <h2 id="chicken">Chicken</h2>
+              <p>Comforting classics, bright flavors, and a touch of something new.</p>
+            </div>
+
+            <div class="featured-layout">
+              <div class="featured-copy">
+                <p class="featured-eyebrow"><span class="eyebrow-dot"></span> A LITTLE SOMETHING SPECIAL</p>
+                <h3>Herb-Roasted<br>Chicken</h3>
+                <p class="featured-description">Golden on the outside, tender at heart. Our kitchen-inspired favorite brings together slow-roasted chicken, fragrant herbs, roasted garlic, and a fresh squeeze of lemon.</p>
+                <div class="flavor-tags" aria-label="Flavor notes">
+                  <span>Fresh herbs</span>
+                  <span>Roasted garlic</span>
+                  <span>Citrus finish</span>
+                </div>
+                <div class="feature-signoff"><span class="signoff-line"></span> SIMPLE INGREDIENTS, BIG FLAVOR</div>
+              </div>
+
+              <!-- Decorative vector illustration, shipped with the HTML; no image downloads needed. -->
+              <div class="featured-art" aria-hidden="true">
+                <svg class="plate-illustration" viewBox="0 0 440 440" focusable="false">
+                  <defs>
+                    <linearGradient id="roasted" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0" stop-color="#e4a65b"/>
+                      <stop offset="0.6" stop-color="#c77a3f"/>
+                      <stop offset="1" stop-color="#9d552e"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="220" cy="220" r="206" fill="#d8dfc9" opacity=".42"/>
+                  <circle cx="220" cy="220" r="184" fill="#e3dbcd"/>
+                  <circle cx="220" cy="220" r="169" fill="#fffdf7"/>
+                  <circle cx="220" cy="220" r="156" fill="none" stroke="#ddd4c2" stroke-width="3"/>
+                  <ellipse cx="213" cy="278" rx="105" ry="40" fill="#d3bfa0" opacity=".33"/>
+                  <!-- Lemon slices. -->
+                  <path d="M112 143 A47 47 0 0 1 182 123 L148 178 Z" fill="#f3c962" stroke="#fff2bc" stroke-width="7"/>
+                  <path d="M266 290 A46 46 0 0 1 339 276 L296 323 Z" fill="#e7bc57" stroke="#fff3c8" stroke-width="7"/>
+                  <!-- Green herbs and leaves. -->
+                  <path d="M111 255 Q100 204 130 174" fill="none" stroke="#4e7750" stroke-width="7" stroke-linecap="round"/>
+                  <ellipse cx="116" cy="218" rx="16" ry="37" fill="#7b966b" transform="rotate(-31 116 218)"/>
+                  <ellipse cx="132" cy="184" rx="13" ry="31" fill="#5f8056" transform="rotate(35 132 184)"/>
+                  <ellipse cx="111" cy="260" rx="13" ry="27" fill="#8ca377" transform="rotate(-43 111 260)"/>
+                  <path d="M307 191 Q336 216 332 259" fill="none" stroke="#527951" stroke-width="7" stroke-linecap="round"/>
+                  <ellipse cx="310" cy="203" rx="15" ry="32" fill="#77966c" transform="rotate(35 310 203)"/>
+                  <ellipse cx="330" cy="239" rx="13" ry="29" fill="#547c56" transform="rotate(-25 330 239)"/>
+                  <ellipse cx="300" cy="255" rx="12" ry="25" fill="#9ab085" transform="rotate(29 300 255)"/>
+                  <!-- Roasted chicken, with a warm glaze and grill marks. -->
+                  <path d="M145 212 C151 171 201 156 235 176 C276 171 303 213 289 247 C279 284 238 303 199 286 C158 291 125 256 145 212 Z" fill="url(#roasted)" stroke="#ae6536" stroke-width="5"/>
+                  <path d="M171 199 C189 180 221 185 234 189" fill="none" stroke="#f8ca85" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+                  <path d="M158 234 C184 244 211 239 235 228" fill="none" stroke="#a75c32" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+                  <path d="M201 274 Q236 282 262 263" fill="none" stroke="#e8b36b" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+                  <path d="M239 201 Q259 211 277 233" fill="none" stroke="#97512d" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+                  <!-- Tiny roasted vegetables and herb sprigs. -->
+                  <circle cx="150" cy="299" r="13" fill="#b75f3a"/>
+                  <circle cx="168" cy="310" r="10" fill="#d68c4b"/>
+                  <circle cx="288" cy="141" r="14" fill="#be6940"/>
+                  <circle cx="306" cy="150" r="9" fill="#dc9a5a"/>
+                  <path d="M173 146 L203 168 M177 160 L190 143 M187 163 L199 149" stroke="#4f754d" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+                <div class="illustration-caption">A TASTE OF HOME</div>
+              </div>
+            </div>
+
+            <div class="divider-with-label"><span>MORE TO SAVOR</span></div>
+
+            <div class="chicken-dishes" aria-label="Additional chicken favorites">
+              <article class="dish-row">
+                <div class="dish-number">01</div>
+                <div class="dish-info">
+                  <h3>Golden Crispy Chicken</h3>
+                  <p>Beautifully crunchy on the outside with a juicy, tender center. A timeless comfort-food favorite.</p>
+                </div>
+                <span class="dish-note">CRISPY &amp; SAVORY</span>
+              </article>
+              <article class="dish-row">
+                <div class="dish-number">02</div>
+                <div class="dish-info">
+                  <h3>Lemon &amp; Herb Chicken</h3>
+                  <p>Light, lively citrus and garden herbs bring fresh character to every satisfying bite.</p>
+                </div>
+                <span class="dish-note">FRESH &amp; BRIGHT</span>
+              </article>
+              <article class="dish-row">
+                <div class="dish-number">03</div>
+                <div class="dish-info">
+                  <h3>Spiced Chicken Bowl</h3>
+                  <p>Warm spices, comforting rice, and colorful vegetables made for an easygoing meal.</p>
+                </div>
+                <span class="dish-note">WARM &amp; COZY</span>
+              </article>
+            </div>
+
+            <!-- Two smaller category previews, still INSIDE the one graded section. -->
+            <div class="more-heading text-center">
+              <p class="section-eyebrow">THERE'S MORE TO LOVE</p>
+              <h3>Something for everyone.</h3>
+            </div>
+            <div class="category-previews">
+              <article class="category-card beef-card" aria-labelledby="beef">
+                <div class="category-symbol" aria-hidden="true">B</div>
+                <p class="category-eyebrow">RICH &amp; COMFORTING</p>
+                <h3 id="beef">Beef</h3>
+                <p>From peppery pan-seared favorites to slow-cooked, savory goodness, our beef dishes are full of character.</p>
+                <div class="category-line"></div>
+                <span>Pepper steak &nbsp;&middot;&nbsp; Slow-cooked beef bowl</span>
+              </article>
+              <article class="category-card sushi-card" aria-labelledby="sushi">
+                <div class="category-symbol" aria-hidden="true">S</div>
+                <p class="category-eyebrow">LIGHT &amp; DELICATE</p>
+                <h3 id="sushi">Sushi</h3>
+                <p>Fresh, balanced rolls and clean flavors for the moments when you want something simple and satisfying.</p>
+                <div class="category-line"></div>
+                <span>Classic maki &nbsp;&middot;&nbsp; Garden rolls</span>
+              </article>
+            </div>
+
+            <div class="closing-note text-center">
+              <div class="closing-mark" aria-hidden="true">✳</div>
+              <p>Made with care. <em>Shared with joy.</em></p>
+              <span>THANK YOU FOR VISITING FOOD, LLC</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Local scripts make the hamburger dropdown work offline. -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
